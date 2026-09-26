@@ -1,0 +1,41 @@
+.section-products {
+    background-color: #f8f8f8;
+    height:550px;
+    
+}
+
+.section-products .swiper {
+    padding-bottom: 25px;
+}
+
+.section-products h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 30px 0;
+
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    color: var(--color-primary-gray);
+}
+
+.section-products h2::before {
+    content: "";
+
+    width: 10px;
+    height: 10px;
+
+    background-color: var(--color-primary-green);
+    border-radius: 50%;
+}
+
+.products-carousel {
+
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+
+}

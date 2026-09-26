@@ -1,0 +1,136 @@
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+
+    background: linear-gradient(var(--color-gradiant-black),
+            var(--color-secondary-text));
+}
+
+.footer-content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.img-logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-logo-footer img {
+    width: 170px;
+    border-radius: 10px;
+}
+
+.img-logo-footer p {
+    margin-top: 10px;
+    color: var(--color-secondary-white);
+    font-size: var(--font-size);
+}
+
+.footer-renoforma {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-renoforma h3,
+.footer-atendimento h3,
+.footer-localizacao h3,
+.footer-siga-nos h3 {
+    margin-bottom: 25px;
+    color: var(--color-primary-green);
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h4-size);
+}
+
+.footer-renoforma a {
+    margin-bottom: 10px;
+    width: 210px;
+    color: var(--color-secondary-white);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+
+    transition: color .3s ease;
+}
+
+.footer-renoforma a:hover {
+    color: var(--color-primary-green);
+
+}
+
+.footer-atendimento {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    color: var(--color-secondary-white);
+    font-size: 16px;
+}
+
+.footer-localizacao {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+}
+
+.footer-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-siga-nos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.footer-rede {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-rede img {
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    transition: transform .3s ease;
+}
+
+.footer-rede img:hover {
+    transform: scale(1.2);
+}
+
+.footer-copy {
+    
+    padding-top: 20px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-copy p {
+    color: var(--color-secondary-l-gray);
+    font-size: 14px;
+}

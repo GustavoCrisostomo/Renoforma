@@ -1,0 +1,31 @@
+.diferenciais {
+    background: var(--color-different-brown);
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: center;
+   gap: 80px ;
+    flex-wrap: wrap;
+    
+}
+
+.diferencial-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height:40px ;
+}
+
+.diferencial-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.diferencial-item p {
+    color: #FFF;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin: 0;
+}
