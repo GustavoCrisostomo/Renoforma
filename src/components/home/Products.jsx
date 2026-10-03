@@ -12,7 +12,7 @@ import armariosref05 from '../../assets/img/armariosref05.svg'
 import sofasref06 from '../../assets/img/sofasref06.svg'
 import mesasref04 from '../../assets/img/mesasref04.svg'
 import mascasref03 from '../../assets/img/macasref03.svg'
-import naruto from '../../assets/img/naruto.jfif'
+
 
 
 
@@ -64,15 +64,9 @@ function Products() {
             image: mascasref03,
             title: "Macas e mochos",
             reference: "REF. 03"
-        },
-        {
-            image: naruto,
-            title: "Naruto Uzunaki",
-            reference: "Filme"
         }
 
-     
-
+    
 
     ];
 

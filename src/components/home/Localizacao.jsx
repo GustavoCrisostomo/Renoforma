@@ -26,12 +26,55 @@ function Localizacao() {
 
             </div>
 
-            <div className="persona">
-                <img
-                    src={persona}
-                    alt="Pessoa utilizando celular"
+             <div class="contact-container">
+
+        <h2>Fale conosco</h2>
+
+        <form class="contact-form">
+
+            <input
+                type="text"
+                placeholder="Nome"
+                name="nome"
+            />
+
+            <input
+                type="tel"
+                placeholder="Telefone"
+                name="telefone"
+            />
+
+            <input
+                type="email"
+                placeholder="E-mail"
+                name="email"
+            />
+
+            <textarea
+                placeholder="Mensagem"
+                name="mensagem"
+            ></textarea>
+
+            <div class="upload-image">
+                <label for="imagem">
+                    <span class="upload-icon">▣</span>
+                    Enviar imagem
+                </label>
+
+                <input
+                    type="file"
+                    id="imagem"
+                    accept="image/*"
                 />
             </div>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
 
         </section>
     );
