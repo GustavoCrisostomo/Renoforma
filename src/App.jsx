@@ -1,14 +1,31 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./page/Home"
-
+import Home from "./page/Home";
+import Cadastro from "./page/Cadastro";
+import CadastroAdmin from "./page/CadastroAdmin";
+import LoginAdmin from "./page/LoginAdmin";
+import Login from "./page/Login";
 
 function App() {
     return (
-       <Home />
-                
-       
+        <BrowserRouter>
+            <Routes>
+
+                <Route path="/" element={<Home />} />
+
+                <Route path="/login" element={<Login />} />
+
+                <Route path="/cadastro" element={<Cadastro />} />
+
+                <Route
+                    path="/adminlogin" element={<LoginAdmin />} />
+
+                <Route
+                    path="/admincadastro"element={<CadastroAdmin />}/>
+
+            </Routes>
+        </BrowserRouter>
     );
 }
-
 
 export default App;

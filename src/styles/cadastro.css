@@ -1,0 +1,212 @@
+.cadastro-page {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.cadastro-intro {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.cadastro-intro h1 {
+    font-size: 30px;
+    color: #26343a;
+    margin-bottom: 4px;
+}
+
+.cadastro-intro p {
+    font-size: 14px;
+    color: #26343a;
+}
+
+
+/* =========================================
+   CARD DO CADASTRO
+========================================= */
+
+.cadastro-card {
+    width: 100%;
+    max-width: 872px;
+    margin: 0 auto;
+    padding: 34px 48px 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 16px;
+
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.formulario {
+    display: flex;
+    gap: 44px;
+}
+
+.form-coluna {
+    flex: 1;
+}
+
+.form-coluna h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: #111111;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.campo label {
+    font-size: 13px;
+    color: #26343a;
+    margin-bottom: 4px;
+}
+
+.campo input {
+    width: 100%;
+    height: 32px;
+
+    padding: 6px 10px;
+
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* Campo menor da coluna esquerda */
+
+.campo-menor {
+    width: 186px;
+}
+
+
+/* Campo CEP */
+
+.campo-cep {
+    width: 187px;
+}
+
+
+/* =========================================
+   RUA + NÚMERO
+========================================= */
+
+.linha-endereco {
+    display: flex;
+    gap: 11px;
+}
+
+.linha-endereco .campo {
+    flex: 1;
+}
+
+.linha-endereco .campo-numero {
+    flex: 0 0 74px;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.botao-cadastro {
+    display: block;
+
+    width: 228px;
+    height: 33px;
+
+    margin: 16px auto 0;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #7db52a;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.botao-cadastro:hover {
+    background-color: #6fa322;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .cadastro-page {
+        padding: 30px 15px;
+    }
+
+    .cadastro-card {
+        padding: 30px 25px;
+    }
+
+    .formulario {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .campo-menor,
+    .campo-cep {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .cadastro-intro h1 {
+        font-size: 25px;
+    }
+
+    .cadastro-card {
+        padding: 25px 20px;
+    }
+
+    .linha-endereco {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .linha-endereco .campo-numero {
+        flex: auto;
+    }
+
+    .botao-cadastro {
+        width: 100%;
+    }
+
+}

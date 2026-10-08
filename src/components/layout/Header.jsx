@@ -1,8 +1,10 @@
-import logo from '../../../src/assets/img/logo-principal.svg'
-import coração from '../../../src/assets/img/Coração-header.svg'
-import lupa from '../../../src/assets/img/Lupa-pesquisa.svg'
-import { ChevronDown } from "lucide-react";
+import logo from '../../assets/img/logo-principal.svg'
+import coração from '../../assets/img/icon-coração.png'
+import lupa from '../../assets/img/Lupa-pesquisa.svg'
+import carrinho from '../../assets/img/icon-carrinho.png'
+import login from '../../assets/img/icon-login.png'
 import { useState } from 'react';
+import { ChevronDown } from "lucide-react";
 import '../../styles/header.css'
 
 function Header() {
@@ -74,9 +76,21 @@ function Header() {
 
                     </div>
 
+                    <div className="login">
+                        <button>
+                            <img src={login} alt="ícone de login" />
+                        </button>
+                    </div>
+
                     <div className="favorites">
                         <button>
                             <img src={coração} alt="ícone de coração" />
+                        </button>
+                    </div>
+
+                    <div className="carrinho">
+                        <button>
+                            <img src={carrinho} alt="ícone de carrinho" />
                         </button>
                     </div>
 

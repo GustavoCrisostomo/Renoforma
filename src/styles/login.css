@@ -1,0 +1,307 @@
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #263238;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 85px);
+    padding: 45px 20px 60px;
+    background-color: #ffffff;
+}
+
+
+/* =========================================
+   INTRODUÇÃO DO LOGIN
+========================================= */
+
+.login-intro {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.login-intro h1 {
+    margin-bottom: 8px;
+    color: #263238;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.login-intro p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CARD DE LOGIN
+========================================= */
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 32px 35px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.login-form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 42px;
+    padding: 0 13px;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #5b941c;
+    box-shadow: 0 0 0 2px rgba(91, 148, 28, 0.12);
+}
+
+
+/* =========================================
+   SENHA
+========================================= */
+
+.password {
+    position: relative;
+    width: 100%;
+}
+
+.password input {
+    width: 100%;
+}
+
+
+/* =========================================
+   OPÇÕES DO LOGIN
+========================================= */
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 22px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #555555;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.remember input {
+    width: 15px;
+    height: 15px;
+    accent-color: #5b941c;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #5b941c;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: #4b7e15;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   BOTÃO ENTRAR
+========================================= */
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a941cbe;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #4b7e15;
+}
+
+.login-button:active {
+    transform: scale(0.99);
+}
+
+.login-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a941cbe;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.login-google:hover {
+    background-color: #5b941c;
+}
+
+.login-google:active {
+    transform: scale(0.99);
+}
+
+
+.social-icon:hover {
+    border-color: #5b941c;
+    background-color: #f7faf4;
+    transform: translateY(-2px);
+}
+
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.register p {
+    color: #666666;
+    font-size: 13px;
+}
+
+.register a {
+    color: #5b941c;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.register a:hover {
+    color: #4b7e15;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .main-content {
+        min-height: calc(100vh - 85px);
+        padding: 35px 16px 45px;
+    }
+
+    .login-intro {
+        margin-bottom: 22px;
+    }
+
+    .login-intro h1 {
+        font-size: 24px;
+    }
+
+    .login-intro p {
+        font-size: 14px;
+    }
+
+    .login-card {
+        max-width: 100%;
+        padding: 28px 22px;
+    }
+
+    .login-options {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .forgot-password {
+        text-align: right;
+    }
+}

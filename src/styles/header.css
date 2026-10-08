@@ -13,7 +13,7 @@
 
 
 .logo {
-    width: 160px;
+    width: 100px;
 
     display: flex;
     justify-content: center;
@@ -23,8 +23,8 @@
 }
 
 .logo img {
-    width: 108px;
-    height: 114px;
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -37,10 +37,9 @@
     justify-content: space-between;
 
     flex: 1;
-    padding: 0 40px;
+    padding: 0 50px;
 
-    background: linear-gradient(var(--color-gradiant-black),
-            var(--color-secondary-text));
+    background: #fafafa;
 }
 
 
@@ -53,7 +52,7 @@
 }
 
 .menu a {
-    color: var(--color-secondary-white);
+    color: var(--color-secondary-text);
     font-family: var(--font-body);
     font-size: var(--font-body-size);
     text-decoration: none;
@@ -150,11 +149,20 @@
     height: 20px;
 }
 
+.login button {
+     padding: 20px;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
 
 
 
 .favorites button {
-    padding: 50px;
+    padding: 20px;
 
     background: transparent;
     border: none;
@@ -164,6 +172,15 @@
 
 .favorites img {
     width: 35px;
+}
+
+.carrinho button {
+    padding: 20px;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
 }
 
 .menu-produtos-seta {

@@ -1,0 +1,120 @@
+
+
+body {
+  color: #222;
+}
+
+.cadastro-page {
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Fundo verde com curvas brancas nos cantos */
+.cadastro-wave {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cadastro-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 16px 60px;
+}
+
+.cadastro-title {
+    
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.cadastro-subtitle {
+  width: 492px;
+  margin: 10px 0 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: center;
+  color: #fff;
+}
+
+/* Cartão do formulário */
+.cadastro-card {
+  position: relative;
+  z-index: 1;
+  justify-self: center;
+  width: 537px;
+  height: 577px;
+  padding: 33px 17px 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cadastro-label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #263238;
+}
+
+.cadastro-input {
+  display: block;
+  width: 489px;
+  height: 39px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 13px;
+}
+
+/* Telefone, Senha e Confirmar senha */
+.cadastro-input.short {
+  width: 36%;
+}
+
+.cadastro-input:focus-visible,
+.cadastro-btn:focus-visible {
+  outline: 2px solid #76b01f;
+  outline-offset: 2px;
+}
+
+.cadastro-btn {
+  display: block;
+  width: 286px;
+  height: 40px;
+  margin: 28px auto 0;
+  border: none;
+  border-radius: 8px;
+  background: #7fae2f;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700; 
+  cursor: pointer;
+}
+
+.cadastro-btn:hover {
+  background: #6d9a24;
+}
+
+@media (max-width: 480px) {
+  .cadastro-title {
+    font-size: 22px;
+  }
+  .cadastro-input.short {
+    width: 60%;
+  }
+}
