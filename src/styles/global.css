@@ -8,6 +8,8 @@ body {
   font-family: 'inter', sans-serif;
   background: #fff;
   color: #454955;
+
+    scroll-behavior: smooth;
 }
 
 a {

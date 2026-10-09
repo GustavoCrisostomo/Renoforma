@@ -21,20 +21,11 @@
     color: var(--color-primary-gray);
 }
 
-.section-products h2::before {
-    content: "";
-
-    width: 10px;
-    height: 10px;
-
-    background-color: var(--color-primary-green);
-    border-radius: 50%;
-}
 
 .products-carousel {
 
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 
 

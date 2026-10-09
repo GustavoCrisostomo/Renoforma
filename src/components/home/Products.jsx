@@ -71,14 +71,14 @@ function Products() {
     ];
 
     return (
-        <section className="section-products">
+        <section id="produtos" className="section-products">
 
             <h2>Nossos Produtos</h2>
 
 <div className="products-carousel">
             <Swiper
 
-                slidesPerView={4.5}
+                slidesPerView={4}
                 
                 grabCursor={true}>
 

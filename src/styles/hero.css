@@ -90,6 +90,7 @@
 
 .btn-primary,
 .btn-secondary {
+    text-align: center;
     width: 313px;
     height: 48px;
 

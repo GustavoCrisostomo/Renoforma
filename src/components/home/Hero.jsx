@@ -15,7 +15,7 @@ function Hero() {
       </div>
 
       <div className="hero-content">
-        
+
         <div className="hero-container">
 
           <h1 className="hero-years">
@@ -34,13 +34,17 @@ function Hero() {
           <div className="contaner-bnt-logo">
             <div className="hero-buttons">
 
-              <button className="btn-primary">
+              <a href="#local-contato" className="btn-primary">
                 Solicitar Orçamento
-              </button>
+              </a>
 
-              <button className="btn-secondary">
+              <a href="#produtos" className="btn-secondary">
                 Nosso Catálogo
-              </button>
+              </a>
+
+              {/* <button className="btn-secondary">
+                Nosso Catálogo
+              </button> */}
 
 
             </div>

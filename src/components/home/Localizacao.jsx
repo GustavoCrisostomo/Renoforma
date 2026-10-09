@@ -4,7 +4,7 @@ import persona from '../../assets/img/persona-localizacao.svg';
 
 function Localizacao() {
     return (
-        <section className="section-localizacao">
+        <section id="local-contato" className="section-localizacao">
 
             <div className="localizacao-content">
 

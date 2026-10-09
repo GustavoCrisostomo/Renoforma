@@ -6,10 +6,6 @@ import Services from '../components/home/Services'
 import Products from '../components/home/Products'
 import SobreNos from '../components/home/SobreNos'
 import Localização from '../components/home/Localizacao'
-import CadastroAdmin from '../page/CadastroAdmin'
-import LoginAdmin from '../page/LoginAdmin'
-import Login from '../page/Login'
-import Cadastro from '../page/Cadastro'
 
 
 
@@ -29,10 +25,7 @@ function Home() {
             <SobreNos />
             <Localização/>
             <Footer />
-            <CadastroAdmin/>
-            <LoginAdmin/>
-            <Login/>
-            <Cadastro/>
+           
         </>
     )
 }
